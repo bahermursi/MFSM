@@ -1,0 +1,8 @@
+FSM fsmTwo
+VAR X; Y
+States:
+a: out “state A machine 2”; sleep 1; X=X+1; run fsmOne; wait
+b: out “thank you for using fsmTwo”; out X; out Y; end
+Transitions:
+a; b; 1
+a; b; 2
