@@ -26,7 +26,7 @@ public:
         else if (act == "sleep") return new Sleep();
         else if (act == "run") return new Run();
         else if (act == "wait") return new Wait();
-         else if (act == "end") return new End();
+        else if (act == "end") return new End();
         else return new Expression();
         
     }
