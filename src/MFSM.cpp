@@ -22,7 +22,7 @@ void MFSM::runMFSM(){
     string s;
     for (int i = 0; i < nMachines.size(); ++i) {
         mThread.push_back(thread([ = ](){
-            FSM fsm( nMachines[ i ] + ".fsm", "");
+            FSM fsm(nMachines[ i ] + ".fsm", "");
             fsm.assignVar(sharedData);
             fsm.startFSM();
             
